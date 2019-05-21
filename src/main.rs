@@ -5,11 +5,12 @@ extern crate rand;
 use rand::Rng;
 
 fn main() {
-    println!("Guess the number!");
+    let min = 1;
+    let max = 101;
+    let secret_number = rand::thread_rng().gen_range(min, max);
 
-    let secret_number = rand::thread_rng().gen_range(1, 101);
-
-    println!("The secret number is: {}", secret_number);
+    // max - 1 because max is exclusive in gen_range
+    println!("Guess the number between {} and {}!", min, max - 1);
 
     loop {
         println!("Please input your guess.");
