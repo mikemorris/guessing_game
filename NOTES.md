@@ -5,4 +5,5 @@
 - `cargo new hello_cargo` creates `src/lib.rs`, not `main.rs`
 - `cargo check` doesn't exist?
 - Maybe a missing `extern crate rand;`?
-- error: cannot document a package where a library and a binary have the same name. Consider renaming one or marking the target as `doc = false`
+- `cargo doc`
+  - error: cannot document a package where a library and a binary have the same name. Consider renaming one or marking the target as `doc = false`
