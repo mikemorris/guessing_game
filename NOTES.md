@@ -2,6 +2,7 @@
 - error: 'rustfmt' is not installed for the toolchain 'stable-x86_64-apple-darwin'
   - To install, run `rustup component add rustfmt --toolchain stable-x86_64-apple-darwin`
   - error: toolchain 'stable-x86_64-apple-darwin' does not contain component 'rustfmt' for target 'x86_64-apple-darwin'
+  - https://github.com/rust-lang/rustup.rs/issues/1558
 - `cargo new hello_cargo` creates `src/lib.rs`, not `main.rs`
 - `cargo check` doesn't exist?
 - Maybe a missing `extern crate rand;`?
