@@ -4,7 +4,10 @@
   - error: toolchain 'stable-x86_64-apple-darwin' does not contain component 'rustfmt' for target 'x86_64-apple-darwin'
   - https://github.com/rust-lang/rustup.rs/issues/1558
 - `cargo new hello_cargo` creates `src/lib.rs`, not `main.rs`
+  - this default seems to no longer be the case on current version of rustup/rustc?
 - `cargo check` doesn't exist?
+  - w0rp/ale vim plugin seems to integrate with it fine though?
 - Maybe a missing `extern crate rand;`?
 - `cargo doc`
   - error: cannot document a package where a library and a binary have the same name. Consider renaming one or marking the target as `doc = false`
+- rand version 0.5.5 at https://doc.rust-lang.org/stable/book/ch07-02-modules-and-use-to-control-scope-and-privacy.html#using-external-packages
